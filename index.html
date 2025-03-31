@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="Abogados.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Firma de abogados</title>
+    <style>
+        .im {
+            width: 300px;  /* Ancho de la imagen */
+            height: 100px; /* Alto de la imagen */
+            object-fit: cover; /* Mantiene el contenido sin deformarlo */
+            border-radius: 10px;
+             /* Bordes ligeramente redondeados (opcional) */
+        }   
+        .whatsapp-float {
+    position: fixed; /* Se mantiene fijo en la pantalla */
+    width: 60px;
+    height: 60px;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la parte derecha */
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(177, 168, 168, 0.3);
+    z-index: 1000; /* Se mantiene sobre otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .whatsapp-float:hover{
+    background-color: #1ebc5d;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg full-screen" id="menu" style="background-image: url(img/abogadosen.jpg); background-size: cover;">
+        <div class="container-fluid">  
+          <a href="index.html" class="navbar-brand text-white">
+           <h4>Firma de abogados</h4>
+          </a>                
+            <button class="navbar-toggler bg-secondary " type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#nosotros">Nosotros</a>              
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white mx-4" href="#Servicios" style="cursor: pointer;">
+                            Servicios 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-white mx-4" href="#contacto" style="cursor: pointer;">
+                          Contacto 
+                      </a>
+                  </li>
+                </ul>
+            </div>     
+        </div>       
+      </nav>  
+      <a href="https://wa.me/" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+        </a>
+        <section id="inicio" class="py-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center gx-3">
+                    <!-- Texto -->
+                    <div class="col-12 col-lg-6 col-md-6 text-center text-md-start">
+                        <h1 class="text-white">Agenda tu cita con nosotros!</h1>
+                        <p class="text-white">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus maxime iste ad molestiae nemo hic laborum totam non esse...
+                        </p>
+                        <div class="mt-4">
+                            <button class="btn btn-success w-100 rounded-5">
+                                <i class="bi bi-whatsapp"></i> Agendar vía WhatsApp
+                            </button>
+                        </div>
+                    </div>       
+                    <div class="col-10 col-md-6 col-lg-3";">
+                        <img src="img/abogadosen.jpg" style="border-radius: 50%;" width="270" height="250" alt="Abogados">
+                    </div>
+                </div>
+            </div>
+        </section>
+           <div class="row">
+            <div class="col-12">
+                <div id="carouselPlatos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/abogadosgrupo.jpg" class="d-block w-100" height="400" alt="Plato 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/abogados3.jpg" class="d-block w-100" height="400" alt="Plato 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/abogados3h.webp" class="d-block w-100" height="400" alt="Plato 3">
+                        </div>
+                    </div>
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlatos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPlatos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+           </div>    
+           <section id="Servicios" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-8 col-lg-8 text-center">
+                        <h1 class="fw-bold">Nuestros Servicios</h1>
+                    </div>
+                </div>
+        
+                <div class="row mt-4 justify-content-center">
+                    <!-- Tarjeta 1 -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4" >
+                        <div class="card shadow-lg" style="background-color: rgb(238, 235, 235);" data-aos="zoom-in">
+                            <div class="card-body">
+                                <h5 class="card-title">Divorcios</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card shadow-lg" style="background-color: rgb(238, 235, 235);" data-aos="zoom-in">
+                            <div class="card-body">
+                                <h5 class="card-title">Notaría</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>                       
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card shadow-lg" style="background-color: rgb(238, 235, 235);" data-aos="zoom-in">
+                            <div class="card-body">
+                                <h5 class="card-title">Turismo</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>                          
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card shadow-lg" style="background-color: rgb(238, 235, 235);" data-aos="zoom-in">
+                            <div class="card-body">
+                                <h5 class="card-title">Divorcios</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card shadow-lg" style="background-color: rgb(238, 235, 235);" data-aos="zoom-in">
+                            <div class="card-body">
+                                <h5 class="card-title">Notaría</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card shadow-lg" style="background-color: rgb(238, 235, 235);" data-aos="zoom-in">
+                            <div class="card-body">
+                                <h5 class="card-title">Divorcios</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>                           
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Puedes duplicar esto para más tarjetas -->
+                </div>
+            </div>
+        </section>
+        
+        <section style="background-image: url(img/abo6.jpg);" class="contenedor-main">
+            <div class="row justify-content-start mt-4">
+             <div class="col-10 col-lg-12">
+               <h2 class=" fw-bold text-center text-white" style="margin-left: 30%;" data-aos="fade-right">Dra. Fulana de tal</h2>
+             </div>
+            </div>
+            <div class="row justify-content-end">
+             <div class="col-12 col-lg-5">
+               <p class="text-center text-white" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi eligendi dolore, modi culpa suscipit? Quibusdam corporis non ratione quos magnam atque? Magni modi iusto tenetur quos dolores expedita consequatur!
+              </p>
+                 <div class="row justify-content-end">
+                   <div class="col-10 col-lg-9">
+                     <button class="btn btn-success rounded-5" data-aos="fade-right">
+                       <i class="bi bi-whatsapp"></i> Consultar via WhatsApp</button>
+                   </div>
+                 </div>
+             </div>
+            </div>
+   </section>
+            <section id="nosotros">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class=" col-11 col-lg-7">
+                            <h1 class="text-white fw-bold">Nosotros</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">                 
+                            <p class="text-white text-justify" data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus labore, dolores atque dolorem illo ducimus id mollitia dolore consequuntur facilis at rem eius neque consequatur possimus omnis reprehenderit. Magni, illum!
+                            Repellat eligendi sint cumque, laboriosam nobis placeat vero recusandae quia, doloribus reiciendis delectus nesciunt distinctio deleniti, est debitis eum incidunt odio. Itaque consectetur fuga dolor. Sapiente dolorum quis numquam eius!
+                            Hic facere perspiciatis quisquam id quam optio molestiae debitis odit quidem sunt, rem amet cum? Blanditiis eos recusandae architecto dignissimos. Molestias dolore quam praesentium, distinctio reiciendis dolorem ea dolorum porro!
+                            Unde tempore ea voluptatum a dolores voluptate ex eligendi accusamus. Molestiae assumenda soluta sed recusandae aperiam nihil et quo facilis ex voluptas necessitatibus neque reiciendis a quasi, incidunt reprehenderit accusantium.
+                            Doloribus dolorum quasi ipsum obcaecati natus excepturi magnam? Consectetur, impedit, reiciendis quia culpa hic ex atque eius, inventore nam architecto quas! Impedit aperiam harum, temporibus mollitia magni labore nulla consequatur.</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class=" col-9 col-lg-5">
+                                <h3 data-aos="fade-up" class="text-white">Nuestros equipo de profesionales</h3>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-md-6 col-lg-4 text-center">
+                                <img class="img-fluid" src="img/abo1.jpg" width="250" height="250" alt="Dra. Fulano de tal" data-aos="zoom-in">
+                                <p class="text-white mt-2">Dra. Fulano de tal</p>
+                                <a href="abo1.html" class="link text-white">Leer mas</a>
+                            </div>
+                        
+                            <div class="col-12 col-md-6 col-lg-4 text-center">
+                                <img class="img-fluid " src="img/abo2.jpg" width="250" height="250" alt="Dra. Fulano de tal"data-aos="zoom-in">
+                                <p class="text-white mt-2">Dra. Fulano de tal</p>
+                                <a href="abo2.html" class="link text-white">Leer mas</a>
+                            </div>
+                        
+                            <div class="col-12 col-md-6 col-lg-4 text-center">
+                                <img class="img-fluid " src="img/abo3.jpg" width="250" height="250" alt="Dra. Fulano de tal"data-aos="zoom-in">
+                                <p class="text-white mt-2">Dra. Fulano de tal</p>
+                                <a href="abo3.html" class="link text-white">Leer mas</a>
+                            </div>
+                        
+                            <div class="col-12 col-md-6 col-lg-4 text-center mt-3">
+                                <img class="img-fluid " src="img/abo4.jpg" width="250" height="350" alt="Dra. Fulano de tal"data-aos="zoom-in">
+                                <p class="text-white mt-2">Dra. Fulano de tal</p>
+                                <a href="abo4.html" class="link text-white mb-0">Leer mas</a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 text-center mt-3">
+                                <img class="img-fluid " src="img/abo5.jpg" width="250" height="200" alt="Dra. Fulano de tal"data-aos="zoom-in">
+                                <p class="text-white mt-2">Dra. Fulano de tal</p>
+                                <a href="abo5.html" class="link text-white mt-0">Leer mas</a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 text-center mt-3 mb-3">
+                                <img class="img-fluid " src="img/abo6.jpg" width="250" height="200" alt="Dra. Fulano de tal"data-aos="zoom-in">
+                                <p class="text-white mt-2">Dra. Fulano de tal</p>
+                                <a href="abo6.html" class="link text-white mt-0">Leer mas</a>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h2 class="text-white">Contacto</h2>
+                                </div>
+                            </div>
+                        </div>     
+            </section>                            
+            <section id="contacto">         
+                <footer>           
+                    <div class="container">
+                        <div class="row justify-content-start">
+                          <div class="col-6 mt-3">             
+                            <p class="text-white"><a href="" class="link text-primary"><i class="bi bi-facebook"></i></a> Firma abogados</p> 
+                            <p class="text-white"><a href="" class="link" style="color: rgb(240, 7, 46);"><i class="bi bi-instagram"></i></a> Firma abogados</p>            
+                          </div>
+                          <div class="col-6 mt-3">
+                            <p class="text-white"><a href="" class="link" style="color: rgb(41, 182, 41);"><i class="bi bi-whatsapp"></i></a> 809-000-0000</p>   
+                            <p class="text-white py-1">
+                              <i class="bi bi-geo-alt-fill"></i>           
+                              Santo Domingo, Rep,Dom.
+                            </p>
+                            <p class="text-white">
+                                <i class="bi bi-envelope-at-fill"></i>       
+                                Test@gmail.com
+                              </p>
+                          </div>
+                        </div>
+                        <h3 style="color: white;">Ubicación</h3>
+                        <div class="container">
+                          <div class="row">
+                              <div class="col">
+                                  <div class="map-container">
+                                      <iframe 
+                                          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d945.9745909176504!2d-69.85166815215347!3d18.488262403658577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sdo!4v1741822292893!5m2!1ses!2sdo" 
+                                          allowfullscreen 
+                                          loading="lazy"
+                                          referrerpolicy="no-referrer-when-downgrade">
+                                      </iframe>
+                                  </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-3">
+                                        <p style="color: white;">Developed by Joel_TechRd &#174</p>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>                     
+                      </div>
+                </footer>          
+            </section>            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+            <script>
+                AOS.init(); // Inicializa AOS
+            </script>
+            
+</body>
+</html>
