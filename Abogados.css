@@ -6,7 +6,7 @@
     background-color: rgb(0, 0, 0);
 }
 #contacto{
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(8, 0, 0);
 }
 .map-container {
     position: relative;
@@ -45,6 +45,12 @@ body{
     align-items: center;
     font-size: 24px;
     padding: 50px;
-  
-
+}
+.bg{
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    align-items: center;
+    font-size: 24px;
+    padding: 50px; 
 }
